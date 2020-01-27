@@ -128,11 +128,11 @@ void pieza_nueva(Pieza& P){
     }
 }
 
-/*bool tablero_fila_llena(const Tablero& T, int fila){
+bool tablero_fila_llena(const Tablero& T, int fila){
     for (int i = 0; i < COLUMNAS; i++){
         if (T[i][fila] == NEGRO) return false;
     }
-}*/
+/
 
 void tablero_colapsa(Tablero& T, int fila){
     for (int j = 0; j > 0; j--){
@@ -146,7 +146,7 @@ void tablero_colapsa(Tablero& T, int fila){
     }
 }
 
-/*void tablero_cuenta_lineas(Tablero& T){
+void tablero_cuenta_lineas(Tablero& T){
     int fila = FILAS -1, cont = 0;
     while (fila >= 0){
     if (tablero_fila_llena(T, fila)){
@@ -157,7 +157,7 @@ void tablero_colapsa(Tablero& T, int fila){
      }
     }
     return cont;
-}*/
+/
 
 int main(){
     //dimensiones de la ventana
@@ -198,6 +198,7 @@ int main(){
 
         if (t == ESPACIO){
             tablero_incrusta_pieza(T, c);
+            int cont = ??? //Aqui sigue el codigo
             //int cont = tablero_cuenta_lineas(T);
 
             pieza_nueva(c);
